@@ -19,7 +19,7 @@ public class UserCRUD {
 
     public void addUser(String name, String email) {
         Document newUser = new Document("nombre", name)
-                .append("user", "@" + name.replace(" ", "_"))
+                .append("arroba", "@" + name.replace(" ", "_"))
                 .append("correo", email);
         UserCollection.insertOne(newUser);
     }

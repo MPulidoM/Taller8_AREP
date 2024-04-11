@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #87CEEB, #FFA07A); /* Fondo degradado */
             line-height: 1.6;
             background-color: #f4f4f4;
             margin: 0;
@@ -93,6 +94,17 @@
             cursor: pointer;
             margin-left: 1rem;
         }
+      .usuario {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #e0e0e0;
+            margin-left: 60px;
+            border-radius: 6px;
+            height: 70vh;
+            width: 70%;
+        }
+
     </style>
 
 </head>
@@ -156,33 +168,28 @@ function msg() {
         body: formBody,
     }).then(posts);
 }</script>
-<h1>Welcome to &#128171</h1>
+    <h1>Welcome to &#128171</h1>
+    <form id="usuario" class="usuario">
+        <div class="formatoUsuario">
+            <div class="informacion">
+                <label for="title">Digita tu Usuario &#128129</label>
 
-<form id="usuario" class="usuario">
-    <div class="formatoUsuario">
-        <div class="informacion">
-            <label for="title">Digita tu Usuario &#128129</label>
-
-            <input type="text" id="nombre" name="nombre" />
-            <br />
-            <input type="button" value="Login" onclick="enviar()" class="submit_button" />
+                <input type="text" id="nombre" name="nombre" />
+                <br />
+                <input type="button" value="Login" onclick="enviar()" class="submit_button" />
+            </div>
         </div>
-    </div>
-</form>
-
-<div id="arroba" class="arroba"></div>
-<br />
-
-<form id="crearPost" class="post">
-    <label for="title">Escribe tus ideas &#128172</label>
-    <br />
-    <input type="text" id="mensaje" name="mensaje" maxlength="140" />
-    <br />
-    <input type="button" value="Publicar" onclick="msg()" class="submit_button" />
-</form>
-
-<br />
-
-<div id="posts" class="listaPost"></div>
+        <div id="arroba" class="arroba"></div>
+        <br />
+        <form id="crearPost" class="post">
+            <label for="title">Escribe tus ideas &#128172</label>
+            <br />
+            <input type="text" id="mensaje" name="mensaje" maxlength="140" />
+            <br />
+            <input type="button" value="Publicar" onclick="msg()" class="submit_button" />
+            <br />
+            <div id="posts" class="listaPost"></div>
+        </form>
+    </form>
 </body>
 </html>

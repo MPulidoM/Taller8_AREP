@@ -36,7 +36,7 @@ public class ThreadCRUD {
     public void addUserPost(String arroba, String mensaje) {
         ArrayList<Document> post = (ArrayList<Document>) ThreadCollection.find().first().get("posts");
         LinkedList<Document> linkedPost = new LinkedList<>(post);
-        linkedPost.addFirst(new Document("arroba", arroba).append("mensaje", mensaje));
+        linkedPost.addFirst(new Document("User", arroba).append("message", mensaje));
         Document threadEx = new Document("nombre", "Principal").append("posts", linkedPost);
         ThreadCollection.findOneAndUpdate(eq("nombre", "Principal"), set("posts", linkedPost));
     }

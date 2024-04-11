@@ -1,0 +1,6 @@
+org\acme\user\UserCRUD.class
+org\acme\publication\PublicationCRUD.class
+org\acme\Thread\ServiceThread.class
+org\acme\user\ServiceUser.class
+org\acme\Thread\ThreadCRUD.class
+org\acme\publication\ServicePublication.class

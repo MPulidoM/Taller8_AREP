@@ -6,7 +6,7 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/publication")
-public class ServicePost {
+public class ServicePublication {
 
     private PublicationCRUD publication = new PublicationCRUD(MongoUtil.getDB());
 
