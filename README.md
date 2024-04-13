@@ -175,7 +175,7 @@ La separación de un monolito en microservicios y su implementación en AWS Lamb
 - Amazon Cognito | Amazon Web Services (1:27). (2023). Amazon Web Services, Inc. https://aws.amazon.com/es/cognito/
 ‌
 # AUTORES 
-Mariana Pulido Moreno[MPulidoM](https://github.com/MPulidoM)
+Mariana Pulido Moreno [MPulidoM](https://github.com/MPulidoM)
 
 Erika Juliana Castro Romero [Juc28](https://github.com/Juc28)
 
