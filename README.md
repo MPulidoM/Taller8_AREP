@@ -75,7 +75,8 @@ Presentamos una plataforma inspirada en Twitter que permite a los usuarios compa
   ![imagen](https://github.com/MPulidoM/Taller8_AREP/assets/118181224/a21efc71-3022-4f97-b1b8-af51b1d31a47)
    
 ## AWS 
-## S3
+## S3 
++ ¿Qué es S3? --> Un servicio de almacenamiento en la nube proporcionado por Amazon Web Services (AWS) se conoce como Amazon Simple Storage Service. Permite que las empresas almacenen y recuperen grandes cantidades de información de manera segura y escalable. S3 es una opción popular para una amplia gama de usos, incluido el almacenamiento de archivos, la copia de seguridad de datos, el alojamiento de sitios web estáticos y el almacenamiento de archivos multimedia, debido a su durabilidad y disponibilidad.
 + Se subió el html de la página y se publico: 
   <img width="960" alt="s3" src="https://github.com/MPulidoM/Taller8_AREP/assets/118181224/28794373-c41b-4cd2-b7d9-e51db9bc147c">
   
@@ -88,6 +89,8 @@ Presentamos una plataforma inspirada en Twitter que permite a los usuarios compa
   <img width="960" alt="firefox_7016PJkF7o" src="https://github.com/MPulidoM/Taller8_AREP/assets/118181224/fcff1896-5ac8-4928-80f5-ad9117466c70">
 
 ## Amazon Cognito 
++ ¿Qué es Amazon Cognito? --> Se utiliza principalmente para permitir que los usuarios se autentiquen y autorizen en aplicaciones web y móviles.
+   
 + Se configura el servicio de cognito y después nos da el siguiente link para entrar al login:
   ~~~
   https://apolo28.auth.us-east-1.amazoncognito.com/login?client_id=3jmpv1khnbt78qnhgpj922qleb&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Ftareaexperimental.s3.amazonaws.com%2FX.html
@@ -121,6 +124,8 @@ Presentamos una plataforma inspirada en Twitter que permite a los usuarios compa
 
 # VIDEO : 
 [VIDEO AWS](https://youtu.be/P1CYymrkMd0)
+
+# REFERENCIAS 
 
 # AUTORES 
 Mariana Pulido Moreno[MPulidoM](https://github.com/MPulidoM)
