@@ -1,6 +1,27 @@
 # TALLER 8 - MICROSERVICIOS 
 Presentamos una plataforma inspirada en Twitter que permite a los usuarios compartir publicaciones de hasta 140 caracteres en un flujo continuo. El sistema, que se desarrolló como un monolito Quarkus, se compone de entidades de usuario, hilo (stream) y publicaciones. Hemos creado una aplicación web que se desplega en Amazon S3 para una accesibilidad global al servicio. 
 
+## EMPEZANDO
+
+El proyecto contiene:
+- Se tiene el siguiente directorio [src/main/java/org/acme](https://github.com/MPulidoM/Taller8_AREP/tree/main/src/main/java/org/acme)
+  
+  --> Tiene [Thread](https://github.com/MPulidoM/Taller8_AREP/tree/main/src/main/java/org/acme/Thread) Este código en Java implementa una API RESTful utilizando JAX-  
+     RS, que ofrece dos funciones principales en la ruta "/Thread": "getThread()" para obtener publicaciones de un hilo de conversación desde una base de datos 
+     MongoDB, y "addUserPost()" para agregar nuevas publicaciones. Utiliza la clase "ThreadCRUD" para interactuar con MongoDB, ofreciendo métodos para obtener y 
+     agregar publicaciones.Proporciona una forma de ver y contribuir a un hilo de conversación almacenado en MongoDB a través de una API RESTful.
+
+  --> Tiene [Publication](https://github.com/MPulidoM/Taller8_AREP/tree/main/src/main/java/org/acme/publication) Este código Java implementa una API RESTful en la     
+      ruta "/publication", proporcionando cuatro métodos: "getPublication()" para obtener publicaciones de un usuario específico, "getPublicationArr()" para obtener 
+      todas las publicaciones, "CreatePublication()" para agregar nuevas publicaciones y "DeletePublication()" para eliminar publicaciones. Utiliza la clase 
+      "PublicationCRUD" para interactuar con MongoDB, facilitando las operaciones de agregar, obtener y eliminar publicaciones. La API ofrece a los 
+      usuarios la capacidad de ver, agregar y eliminar publicaciones en una base de datos MongoDB a través de una interfaz RESTful.
+
+  --> Tiene[User](https://github.com/MPulidoM/Taller8_AREP/tree/main/src/main/java/org/acme/user) Este código en Java es una API RESTful simple que opera en la ruta         "/user". Permite a los usuarios ver, agregar y eliminar usuarios en una base de datos MongoDB. Utiliza la clase "UserCRUD" para la interacción con la base de          datos.
+  
+- Se tienen los [Recursos](https://github.com/MPulidoM/Taller8_AREP/tree/main/src/main/resources/static) que contienen un HTML que utiliza JavaScript para interactuar con una API RESTful y permitir a los usuarios publicar mensajes en un hilo de conversación. La página tiene formularios para ingresar el nombre del usuario y el mensaje, y botones para enviar esta información al servidor. Después de enviar el mensaje, la página hace una solicitud para obtener el hilo de conversación actualizado y lo muestra.
+  
+
 ## HERRAMIENTAS 
 - [MAVEN](https://maven.apache.org) : Para el manejo de las dependecias.
   <p align="center">
@@ -28,6 +49,20 @@ Presentamos una plataforma inspirada en Twitter que permite a los usuarios compa
   <p/>
 # ARQUITECTURA
 
+La arquitectura se basa en una API RESTful desarrollada en Java utilizando el framework JAX-RS. La API se comunica con una base de datos MongoDB para almacenar y recuperar datos.
+
+La API tiene diferentes rutas o endpoint para realizar diferentes operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en tres diferentes recursos: hilo de conversación, publicaciones y usuarios.
+
+La ruta "/Thread" permite obtener las publicaciones de un hilo de conversación y agregar nuevas publicaciones al hilo. La clase ThreadCRUD se utiliza para interactuar con la base de datos MongoDB y realizar las operaciones CRUD correspondientes.
+
+La ruta "/publication" permite obtener las publicaciones de un usuario específico, obtener todas las publicaciones, crear nuevas publicaciones y eliminar publicaciones. La clase PublicationCRUD se utiliza para interactuar con la base de datos MongoDB y realizar las operaciones CRUD correspondientes.
+
+La ruta "/user" permite obtener la información de un usuario específico, crear nuevos usuarios y eliminar usuarios. La clase UserCRUD se utiliza para interactuar con la base de datos MongoDB y realizar las operaciones CRUD correspondientes.
+
+Por otro lado, la página web HTML utiliza JavaScript para interactuar con la API RESTful y publicar mensajes en el hilo de conversación. La página web proporciona una interfaz de usuario fácil de usar y un estilo agradable.
+
+La arquitectura y diseño de este  se basa en una API RESTful desarrollada en Java utilizando JAX-RS, que se comunica con una base de datos MongoDB para almacenar y recuperar datos. La API tiene diferentes rutas o endpoint para realizar operaciones CRUD en tres diferentes recursos: hilo de conversación, publicaciones y usuarios. La página web HTML utiliza JavaScript para interactuar con la API y publicar mensajes en el hilo de conversación.
+  
   
 # INSTALACIÓN 
 
@@ -56,7 +91,7 @@ Presentamos una plataforma inspirada en Twitter que permite a los usuarios compa
 ## Local 
 * Abrir en el navegador:
  ~~~
- http://localhost:4567/X.html
+ http://localhost:8080/X.html
  ~~~
   ![imagen](https://github.com/MPulidoM/Taller8_AREP/assets/118181224/bbb15536-6d93-4817-a500-378f97d0cc2b)
 
@@ -125,8 +160,20 @@ Presentamos una plataforma inspirada en Twitter que permite a los usuarios compa
 # VIDEO : 
 [VIDEO AWS](https://youtu.be/P1CYymrkMd0)
 
+## TAREA EXPERIMENTAL - CONCLUSIÓN DE ALCANCE
+
+La separación de un monolito en microservicios y su implementación en AWS Lambda puede añadir complejidad al sistema, lo que potencialmente dificultaría su gestión y mantenimiento, especialmente para aquellos no familiarizados con esta arquitectura. Además, los problemas de compatibilidad entre los servicios de AWS y el código de la aplicación podrían surgir, planteando desafíos significativos para su resolución. Asimismo, los riesgos de seguridad son una preocupación importante. Por ejemplo, la implementación de seguridad mediante JWT a través de AWS Cognito, junto con el despliegue del servicio en AWS Lambda, podría exponer al sistema a vulnerabilidades si no se ejecutan correctamente los controles de validación del token JWT. Del mismo modo, una función AWS Lambda mal protegida podría ser vulnerable a accesos no autorizados. 
+
+- Las cuentas de estudiante de AWS tienen limitaciones en términos de recursos disponibles, como la cantidad de instancias de computación, almacenamiento y ancho de banda. Estas limitaciones pueden afectar el rendimiento y la escalabilidad de la aplicación, lo que puede ser un problema al implementar JWT en una aplicación que requiere autenticación
+
 # REFERENCIAS 
 
+- Akkaya, C. (2023, Septiembre). Amazon Cognito-1: Creating Cognito User Pools for authentication, and Connecting to an Application by using it. Medium; Medium. https://cmakkaya.medium.com/amazon-cognito-1-creating-cognito-user-pools-for-authentication-and-connecting-to-an-application-99f8c5388205
+
+- AWS | Almacenamiento de datos seguro en la nube (S3). (2023). Amazon Web Services, Inc. https://aws.amazon.com/es/s3/
+  
+- Amazon Cognito | Amazon Web Services (1:27). (2023). Amazon Web Services, Inc. https://aws.amazon.com/es/cognito/
+‌
 # AUTORES 
 Mariana Pulido Moreno[MPulidoM](https://github.com/MPulidoM)
 
