@@ -76,9 +76,10 @@ Presentamos una plataforma inspirada en Twitter que permite a los usuarios compa
    
 ## AWS 
 ## S3
-+ Se subio el html de la página y se publico: 
++ Se subió el html de la página y se publico: 
   <img width="960" alt="s3" src="https://github.com/MPulidoM/Taller8_AREP/assets/118181224/28794373-c41b-4cd2-b7d9-e51db9bc147c">
-+ Quedo con el siguiente link:
+  
++ Quedo con la siguiente URL:
   ~~~
   https://tareaexperimental.s3.amazonaws.com/X.html
   ~~~
@@ -87,11 +88,11 @@ Presentamos una plataforma inspirada en Twitter que permite a los usuarios compa
   <img width="960" alt="firefox_7016PJkF7o" src="https://github.com/MPulidoM/Taller8_AREP/assets/118181224/fcff1896-5ac8-4928-80f5-ad9117466c70">
 
 ## Amazon Cognito 
-+ Se configura el servicio de cognito y despues nos da el siguiente link para entrar al login:
++ Se configura el servicio de cognito y después nos da el siguiente link para entrar al login:
   ~~~
   https://apolo28.auth.us-east-1.amazoncognito.com/login?client_id=3jmpv1khnbt78qnhgpj922qleb&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Ftareaexperimental.s3.amazonaws.com%2FX.html
   ~~~
-+ Para registrar pordemos señalar lo siguiente:
++ Para registrar podemos señalar lo siguiente:
   
   ![imagen](https://github.com/MPulidoM/Taller8_AREP/assets/118181224/eb027387-4814-4e9a-91c0-2fa5ffae401d)
   
