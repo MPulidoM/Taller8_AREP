@@ -17,7 +17,7 @@ El proyecto contiene:
       "PublicationCRUD" para interactuar con MongoDB, facilitando las operaciones de agregar, obtener y eliminar publicaciones. La API ofrece a los 
       usuarios la capacidad de ver, agregar y eliminar publicaciones en una base de datos MongoDB a través de una interfaz RESTful.
 
-  --> Tiene[User](https://github.com/MPulidoM/Taller8_AREP/tree/main/src/main/java/org/acme/user) Este código en Java es una API RESTful simple que opera en la ruta         "/user". Permite a los usuarios ver, agregar y eliminar usuarios en una base de datos MongoDB. Utiliza la clase "UserCRUD" para la interacción con la base de          datos.
+  --> Tiene [User](https://github.com/MPulidoM/Taller8_AREP/tree/main/src/main/java/org/acme/user) Este código en Java es una API RESTful simple que opera en la ruta         "/user". Permite a los usuarios ver, agregar y eliminar usuarios en una base de datos MongoDB. Utiliza la clase "UserCRUD" para la interacción con la base de          datos.
   
 - Se tienen los [Recursos](https://github.com/MPulidoM/Taller8_AREP/tree/main/src/main/resources/static) que contienen un HTML que utiliza JavaScript para interactuar con una API RESTful y permitir a los usuarios publicar mensajes en un hilo de conversación. La página tiene formularios para ingresar el nombre del usuario y el mensaje, y botones para enviar esta información al servidor. Después de enviar el mensaje, la página hace una solicitud para obtener el hilo de conversación actualizado y lo muestra.
   
@@ -43,7 +43,7 @@ El proyecto contiene:
   <p align="center">
    <IMG src=https://static-00.iconduck.com/assets.00/docker-icon-2048x1753-uguk29a7.png height=150 width=250> 
   <p/>
-- [POSMAN](https://www.postman.com/): Permite enviar solicitudes HTTP, inspeccionar respuestas, automatizar pruebas y colaborar en el desarrollo de APIs de manera eficiente. 
+- [POSTMAN](https://www.postman.com/): Permite enviar solicitudes HTTP, inspeccionar respuestas, automatizar pruebas y colaborar en el desarrollo de APIs de manera eficiente. 
   <p align="center">
    <IMG src=https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png height=150 width=250> 
   <p/>
@@ -138,7 +138,7 @@ La arquitectura y diseño de este  se basa en una API RESTful desarrollada en Ja
   
   <img width="962" alt="registro" src="https://github.com/MPulidoM/Taller8_AREP/assets/118181224/ef006964-d511-4d2c-ac71-f4cf8bdb0306">
   
-+ Nos pide verificar el correr, entonces nos llegara un correo con el código:
++ Nos pide verificar el correo, entonces nos llegara un correo con el código:
   
   ![Imagen de WhatsApp 2024-04-12 a las 17 26 05_1923a69c](https://github.com/MPulidoM/Taller8_AREP/assets/118181224/125d27b5-f32e-4246-8e34-a121d4b71d9d)
 + Colocamos el código:
